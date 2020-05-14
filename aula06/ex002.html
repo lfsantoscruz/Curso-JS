@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa JS</title>
+    <style>
+        body {
+            background-color: rgb(175, 100, 100);
+            color: white;
+            font: normal 20px arial;
+
+        }
+        h1 {
+            color: rgb(225, 250, 6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei do Olá, Mundo!</p>
+    <script>
+       var nome = window.prompt("Qual seu nome?") // EXIBINDO UMA PERGUNTA COM UM CAMPO, E A VARIAVEL NOME RECEBE A RESPOSTA
+       window.alert('É um grande prazer te conhecer, ' + nome +'!') //EXIBINDO UMA MENSAGEM E CONCATENANDO A VARIALVEL (NOME)
+        var confirmacao = window.confirm(`Você realmente é ${nome}?`)//EXIBINDO UMA PERGUNTA SEM CAMPO, E A VARIAVEL CONFIRMAÇÃO RECEBE A RESPOSTA
+        if (confirmacao == true){
+            window.alert(`O seu nome é ${nome}!`)    
+        } else {
+            window.alert(`O seu nome não é ${nome}!`)
+        }
+
+    </script>
+</body>
+</html>
